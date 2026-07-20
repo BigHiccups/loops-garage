@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop's Garage — Estética Automotiva Premium em Indaiatuba e região | Vitrificação, Polimento e Detalhamento</title>
+    <meta name="description" content="Estética automotiva de alto padrão em Indaiatuba e região. Vitrificação Soft99, Polimento Técnico, Higienização Interna e Limpeza Detalhada. Devolva o aspecto de zero km ao seu veículo.">
+    <meta name="theme-color" content="#09090b">
+
+    <!-- Fonts: Inter for clean body text, Outfit for premium modern headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316', /* Neon Amber/Orange accent */
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            900: '#7c2d12',
+                        },
+                        dark: {
+                            950: '#09090b',
+                            900: '#18181b',
+                            800: '#27272a',
+                            700: '#3f3f46',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD para SEO Localizado -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "@id": "https://loopsgarage.com.br/#business",
+      "name": "Loop's Garage",
+      "alternateName": "Loops Garage Estética Automotiva",
+      "description": "Estética automotiva premium em Indaiatuba e região. Credenciado Soft99. Vitrificação cerâmica, polimento técnico, higienização de alto nível, limpeza detalhada de motor.",
+      "url": "https://loopsgarage.com.br/",
+      "telephone": "+5519999999999",
+      "email": "contato@loopsgarage.com.br",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Indaiatuba",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": { "@type": "City", "name": "Indaiatuba e região" },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }],
+      "sameAs": [
+        "https://www.instagram.com/loops.garage/"
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #09090b;
+            color: #f4f4f5;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Hide scrollbars for carousel */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="selection:bg-brand-500 selection:text-white overflow-x-hidden">
+
+
+<!-- ===== CABEÇALHO ===== -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-dark-950/80 border-b border-zinc-850" id="siteHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Logo Area with Contrast Control for Dark Theme -->
+        <a href="#top" class="flex items-center gap-3 group">
+            <div class="h-11 w-auto max-w-[180px] bg-zinc-900/50 hover:bg-zinc-900 rounded-lg border border-zinc-800 transition-colors flex items-center justify-center">
+                <!-- RESERVADO PARA SUA LOGO (VERSÃO BRANCA/TRANSPARENTE) -->
+                <img src="assets/loops-garage2.jpg" 
+                     onerror="this.src='https://placehold.co/180x50/000000/ffffff?text=Logo+White'"
+                     alt="Loop's Garage Logo" 
+                     class="rounded-lg h-full w-auto object-contain brightness-100 contrast-125 transition-transform group-hover:scale-102">
+            </div>
+            <div class="hidden sm:flex flex-col">
+                <span class="font-display font-bold text-sm tracking-wider text-white">LOOP'S GARAGE</span>
+                <span class="text-[9px] text-zinc-500 font-semibold tracking-widest uppercase">Estética Premium</span>
+            </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden lg:flex items-center gap-8">
+            <a href="#servicos" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Serviços</a>
+            <a href="#moto-detail" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Moto Detail</a>
+            <a href="#diferenciais" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Diferenciais</a>
+            <a href="#galeria" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Galeria</a>
+            <a href="#pacotes" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Combos</a>
+            <a href="#precos" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Preços</a>
+            <a href="#faq" class="text-sm font-medium text-zinc-300 hover:text-brand-500 transition-colors">Dúvidas</a>
+        </nav>
+
+        <!-- CTA Desk -->
+        <div class="hidden md:flex items-center">
+            <button onclick="requestQuote()" class="bg-brand-500 hover:bg-brand-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-lg shadow-brand-500/15 transition-all hover:translate-y-[-1px] active:translate-y-0">
+                Fazer Orçamento
+            </button>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="menuToggle" class="lg:hidden flex flex-col justify-between w-6 h-5 text-white focus:outline-none" aria-label="Menu de Navegação">
+            <span class="w-full h-[2px] bg-white rounded transition-transform duration-300" id="bar1"></span>
+            <span class="w-full h-[2px] bg-white rounded transition-opacity duration-300" id="bar2"></span>
+            <span class="w-full h-[2px] bg-white rounded transition-transform duration-300" id="bar3"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden fixed top-20 left-0 w-full bg-dark-950 border-b border-zinc-800 py-6 px-4 flex flex-col gap-4 shadow-xl">
+        <a href="#servicos" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Serviços</a>
+        <a href="#moto-detail" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Moto Detail</a>
+        <a href="#diferenciais" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Diferenciais</a>
+        <a href="#galeria" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Galeria</a>
+        <a href="#pacotes" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Combos Especiais</a>
+        <a href="#precos" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Preços</a>
+        <a href="#faq" class="text-base font-medium text-zinc-300 hover:text-brand-500 py-2 border-b border-zinc-900">Dúvidas</a>
+        <button onclick="requestQuote()" class="w-full bg-brand-500 text-white py-3 rounded-lg font-semibold text-center mt-2">
+            Fazer Orçamento no WhatsApp
+        </button>
+    </div>
+</header>
+
+
+<!-- ===== HERO ===== -->
+<section class="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden" id="top">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-brand-700/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(#1c1917_1px,transparent_1px)] [background-size:24px_24px] opacity-25"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 flex flex-col items-start gap-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-850 text-xs font-semibold text-zinc-300">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Estética Automotiva de Alta Performance · Indaiatuba e região
+            </div>
+            
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-white leading-tight tracking-tight">
+                A proteção e o brilho que devolvem a alma de <span class="text-gradient">carro zero</span>.
+            </h1>
+
+            <p class="text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed">
+                Tratamento premium com produtos das marcas mais conceituadas do mundo. O cuidado artesanal que valoriza e protege o seu veículo, com a comodidade do atendimento no local para serviços selecionados.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <button onclick="requestQuote()" class="w-full sm:w-auto bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand-500/20 transition-all hover:scale-[1.02] active:scale-100 flex items-center justify-center gap-2 text-base">
+                    Solicitar Orçamento
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+                <a href="#servicos" class="w-full sm:w-auto bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 px-8 py-4 rounded-xl font-bold transition-all text-center flex items-center justify-center text-base">
+                    Ver Serviços
+                </a>
+            </div>
+
+            <!-- Stats/Badges -->
+            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zinc-800/60 w-full">
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-display">3 Anos</span>
+                    <span class="text-xs text-zinc-500 uppercase tracking-wider">De Experiência</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-display">Soft99</span>
+                    <span class="text-xs text-zinc-500 uppercase tracking-wider">Credenciado Oficial</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-extrabold text-white font-display">Premium</span>
+                    <span class="text-xs text-zinc-500 uppercase tracking-wider">Produtos Importados</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Badge Visual / Callout Box -->
+        <div class="lg:col-span-5 relative w-full flex justify-center">
+            <div class="relative w-full max-w-sm rounded-2xl border border-zinc-800 bg-zinc-950/40 p-6 backdrop-blur-sm shadow-2xl">
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-500/10 rounded-full blur-2xl"></div>
+                
+                <h3 class="font-display font-extrabold text-zinc-200 text-xl border-b border-zinc-800/80 pb-4 mb-4 flex items-center gap-2">
+                    <span class="text-brand-500">✦</span> Loop's Atendimento
+                </h3>
+                <ul class="space-y-4 text-zinc-300 text-sm">
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-500 font-bold mt-0.5">✓</span>
+                        <div>
+                            <strong class="text-white block">Atendimento no Local</strong>
+                            Oferecemos alguns serviços diretamente no seu endereço para sua total comodidade.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-500 font-bold mt-0.5">✓</span>
+                        <div>
+                            <strong class="text-white block">Finais de Semana e Feriados</strong>
+                            Atendimento exclusivo das 07h às 18h para não atrapalhar sua rotina semanal.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-500 font-bold mt-0.5">✓</span>
+                        <div>
+                            <strong class="text-white block">Insumos de Ponta</strong>
+                            Trabalhamos exclusivamente com marcas consagradas do detalhamento automotivo.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== BRAND SPOTLIGHT (BLOCO DE LOGO EM DESTAQUE) ===== -->
+<section class="py-16 bg-zinc-950 border-t border-b border-zinc-850 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-500/5 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Text Description of Brand -->
+            <div class="lg:col-span-6 text-left">
+                <span class="text-brand-500 text-xs font-extrabold tracking-widest uppercase">Assinatura de Excelência</span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-1 mb-3">Conheça a Loop's Garage</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed max-w-lg">
+                    Mais que estética, somos um atelier de conservação. Nosso selo de qualidade garante processos limpos, precisos e o uso de substâncias que valorizam de forma real e duradoura o seu carro em Indaiatuba e região.
+                </p>
+            </div>
+            
+            <!-- Beautiful Logo Showcase Frame (Adequado para logo preta/branca ou branca/preta) -->
+            <div class="lg:col-span-6 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-md rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 backdrop-blur-sm flex flex-col items-center justify-center gap-4 group hover:border-brand-500/30 transition-all shadow-xl">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-brand-500/5 rounded-full blur-3xl"></div>
+                    
+                    <!-- Showcase Logo Container -->
+                    <div class=" rounded-xl bg-black border border-zinc-800 p-4 flex items-center justify-center shadow-inner relative overflow-hidden">
+                        <!-- Grade sutil de fundo para dar sensação premium -->
+                        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:10px_10px]"></div>
+                        
+                        <!-- IMAGEM DA LOGO EM DESTAQUE (Espaço ideal para logo versão branca ou preta) -->
+                        <img src="assets/loops_garage1a.jpg" 
+                             onerror="this.src='https://placehold.co/300x100/18181b/ffffff?text=Sua+Logo+Aqui'"
+                             alt="Logo Principal Loop's Garage" 
+                             class="max-h-full max-w-full object-contain relative z-10 transition-transform group-hover:scale-105 duration-500">
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-xs text-zinc-500 tracking-widest uppercase font-semibold">Selo Oficial de Qualidade</p>
+                        <p class="text-[11px] text-zinc-400 mt-1 italic">Pronto para ser substituído com seu arquivo PNG ou vetor oficial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== INTERACTIVE MOCK CAROUSEL ===== -->
+<section id="galeria" class="py-20 bg-zinc-900/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">Trabalhos Realizados</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">Galeria de Resultados</h2>
+            <p class="text-zinc-400 mt-2">Dê uma olhada no nível de espelhamento, limpeza técnica e perfeição que aplicamos nos veículos.</p>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="relative max-w-4xl mx-auto overflow-hidden group">
+            
+            <!-- Slides wrapper -->
+            <div id="carouselTrack" class="flex transition-transform duration-500 ease-out cursor-grab active:cursor-grabbing" style="transform: translateX(0%);">
+                <!-- Slide 1 -->
+                <div class="min-w-full px-2 box-border">
+                    <div class="relative h-[250px] sm:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/certificacao.jpg" 
+                             alt="Aplicação de Coating Cerâmico e Vitrificação" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
+                            <span class="text-brand-500 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-1">Vitrificação e Correção</span>
+                            <h3 class="font-display font-bold text-lg sm:text-2xl text-white">Espelhamento e Proteção Japonesa Soft99</h3>
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-xl mt-1 hidden sm:block">Dureza, repelência incrível contra água e proteção térmica contra intempéries do dia a dia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full px-2 box-border">
+                    <div class="relative h-[250px] sm:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/polimento.jpg" 
+                             alt="Correção e Polimento Técnico Automotivo" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
+                            <span class="text-brand-500 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-1">Polimento Técnico</span>
+                            <h3 class="font-display font-bold text-lg sm:text-2xl text-white">Eliminação de Hologramas e Riscos</h3>
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-xl mt-1 hidden sm:block">Correção milimétrica de verniz utilizando técnicas avançadas e produtos importados alemães Koch Chemie.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full px-2 box-border">
+                    <div class="relative h-[250px] sm:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/moto.jpg" 
+                             alt="Higienização Interna Completa" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
+                            <span class="text-brand-500 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-1">Proteção Completa</span>
+                            <h3 class="font-display font-bold text-lg sm:text-2xl text-white">Polimento & Proteção de Tanque</h3>
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-xl mt-1 hidden sm:block">Descontaminação completa da corrente, coroa e pinhão, seguida de lubrificação de alta performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="min-w-full px-2 box-border">
+                    <div class="relative h-[250px] sm:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/motor.jpg" 
+                             alt="Limpeza Técnica de Motor" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
+                            <span class="text-brand-500 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-1">Cofre do Motor</span>
+                            <h3 class="font-display font-bold text-lg sm:text-2xl text-white">Detalhamento e Verniz de Proteção Térmica</h3>
+                            <p class="text-zinc-300 text-xs sm:text-sm max-w-xl mt-1 hidden sm:block">Limpeza dielétrica extremamente segura que remove resíduos pesados e protege componentes plásticos e mangueiras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls (Esquerda/Direita) -->
+            <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-zinc-950/80 hover:bg-brand-500 border border-zinc-800 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 hover:scale-105" aria-label="Slide Anterior">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-zinc-950/80 hover:bg-brand-500 border border-zinc-800 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 hover:scale-105" aria-label="Próximo Slide">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Indicators (Bolinhas) -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="carouselDots">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== SERVIÇOS ===== -->
+<section id="servicos" class="py-24 border-t border-zinc-900 bg-zinc-950/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">O que fazemos</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Cardápio de Serviços Especializados</h2>
+            <p class="text-zinc-400 mt-4">Clique em qualquer serviço abaixo para solicitar um orçamento personalizado instantâneo via WhatsApp.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Vitrificação -->
+            <div onclick="requestQuote('Vitrificação Soft99')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        🛡️
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Vitrificação</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Aplicação de coating cerâmico de alta performance (Soft99). Cria uma barreira de vidro ultra-resistente contra raios UV, fezes de aves, seiva de árvores e micro-riscos, além de proporcionar uma hidrorrepelência extrema e brilho espelhado.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 750,00</span>
+                </div>
+            </div>
+
+            <!-- Polimento -->
+            <div onclick="requestQuote('Polimento Técnico')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        ✨
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Polimento Técnico</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Correção profunda da pintura para eliminação de hologramas, riscos superficiais e oxidações. Através de processos padronizados de corte, refino e lustro, resgatamos a profundidade da cor e o reflexo puro do seu veículo.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 450,00</span>
+                </div>
+            </div>
+
+            <!-- Higienização -->
+            <div onclick="requestQuote('Higienização Interna')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        🧼
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Higienização</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Limpeza profunda do habitáculo com extração de sujeiras de tecidos, higienização do teto, colunas, carpetes e revitalização minuciosa de plásticos e couro com produtos de pH neutro e ação bactericida, eliminando odores e ácaros.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 400,00</span>
+                </div>
+            </div>
+
+            <!-- Limpeza Detalhada -->
+            <div onclick="requestQuote('Limpeza Detalhada')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        🔍
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Limpeza Detalhada</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Muito além de uma lavagem comum. Limpeza minuciosa com pincéis de detalhamento nos emblemas, grades, cantos de portas, caixas de rodas e bocal de combustível. Uso de shampoo neutro de altíssima lubrificação e secagem técnica segura.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 120,00</span>
+                </div>
+            </div>
+
+            <!-- Limpeza de Motor -->
+            <div onclick="requestQuote('Limpeza de Motor')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        ⚙️
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Limpeza de Motor</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Higienização segura do cofre do motor utilizando técnica dielétrica e pincéis específicos. Remoção completa de graxas e verniz antigo acumulado, finalizando com aplicação de verniz protetor térmico que previne o ressecamento de mangueiras.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 150,00</span>
+                </div>
+            </div>
+
+            <!-- Limpeza Pesada (Chassi removido) -->
+            <div onclick="requestQuote('Limpeza Pesada')" class="cursor-pointer bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 hover:border-brand-500/50 hover:bg-zinc-900/80 transition-all group flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-5 font-bold text-xl group-hover:scale-110 transition-transform">
+                        🚜
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2 group-hover:text-brand-500 transition-colors">Limpeza Pesada</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        Indicada para veículos sob condições severas (barro, poeira pesada, minério). Descontaminação química e lavagem técnica de caixas de roda profundas e suspensão com produtos desengraxantes alcalinos e ácidos de alta segurança.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-800/60">
+                    <span class="text-xs text-zinc-500">A partir de</span>
+                    <span class="text-brand-500 font-bold text-lg font-display">R$ 170,00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== MOTO DETAIL SECTOR (EXCLUSIVO PARA MOTOS) ===== -->
+<section id="moto-detail" class="py-24 bg-gradient-to-b from-zinc-950 to-zinc-900 border-t border-b border-zinc-900 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/2 right-1/4 w-80 h-80 bg-brand-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 flex flex-col gap-6">
+                <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">Especialidade Duas Rodas</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">Moto Detail de Alto Padrão</h2>
+                <p class="text-zinc-400">
+                    Motos exigem cuidado cirúrgico. Cada cabo exposto, metal polido e canto do motor recebe nossa atenção. Tratamos motos esportivas, customs, nakeds e big trails com processos que garantem brilho espetacular e durabilidade incomparável.
+                </p>
+                
+                <div class="bg-zinc-900/60 border border-zinc-800 p-5 rounded-xl flex items-start gap-4">
+                    <span class="text-2xl mt-1">⚙️</span>
+                    <div>
+                        <strong class="text-white block">Limpeza Técnica de Relação</strong>
+                        Descontaminação completa da corrente, coroa e pinhão, seguida de lubrificação de alta performance.
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900/60 border border-zinc-800 p-5 rounded-xl flex items-start gap-4">
+                    <span class="text-2xl mt-1">🏍️</span>
+                    <div>
+                        <strong class="text-white block">Polimento &amp; Proteção de Tanque</strong>
+                        Correção de micro-riscos nas áreas de contato das coxas com o tanque e aplicação de selantes cerâmicos.
+                    </div>
+                </div>
+
+                <button onclick="requestQuote('Estética Completa de Moto', 'moto')" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all w-full sm:w-auto text-center shadow-lg shadow-brand-500/10">
+                    Solicitar Orçamento Moto Detail
+                </button>
+            </div>
+
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-2xl flex flex-col gap-4 hover:border-brand-500/30 transition-all">
+                    <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                        <span class="text-brand-500">✨</span> Vitrificação Soft99
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Aplicação de verniz cerâmico japonês desenvolvido especialmente para plásticos, carenagens pintadas e metais de motos. Protege contra calor extremo, raios UV e oxidação de alumínios.
+                    </p>
+                    <span class="text-brand-500 font-bold text-sm">A partir de R$ 380,00</span>
+                </div>
+
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-2xl flex flex-col gap-4 hover:border-brand-500/30 transition-all">
+                    <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                        <span class="text-brand-500">🧼</span> Lavagem Detalhada
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Lavagem com pincéis especiais para alcançar todos os vãos e fiações, secagem técnica por soprador que evita acúmulo de água nos componentes eletrônicos e acabamento premium.
+                    </p>
+                    <span class="text-brand-500 font-bold text-sm">A partir de R$ 80,00</span>
+                </div>
+
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-2xl flex flex-col gap-4 hover:border-brand-500/30 transition-all">
+                    <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                        <span class="text-brand-500">🔥</span> Revitalização de Escapes
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Polimento técnico de metais e escapamentos cromados ou em inox. Remove amarelamento do calor e resíduos grudados de asfalto, devolvendo o aspecto original.
+                    </p>
+                    <span class="text-brand-500 font-bold text-sm">A partir de R$ 120,00</span>
+                </div>
+
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-2xl flex flex-col gap-4 hover:border-brand-500/30 transition-all">
+                    <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                        <span class="text-brand-500">💺</span> Cuidado com Assento
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Higienização química e proteção hidrofóbica com toque seco para bancos de couro, couro sintético ou Alcantara. Protege contra desbotamento por sol e rachaduras.
+                    </p>
+                    <span class="text-brand-500 font-bold text-sm">A partir de R$ 60,00</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== DIFERENCIAIS ===== -->
+<section id="diferenciais" class="py-24 bg-zinc-900/20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 flex flex-col gap-6">
+                <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">Por que a Loop's?</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">Nenhum detalhe é deixado ao acaso</h2>
+                <p class="text-zinc-400">
+                    Entendemos que o seu carro é um patrimônio valioso. Por isso, na Loop's Garage, aliamos técnica apurada, materiais importados de altíssima performance e atendimento personalizado.
+                </p>
+
+                <!-- Check List -->
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center text-xs font-bold">✓</span>
+                        <span>Insumos das marcas líderes globais: <strong class="text-white">CarPro, Soft99, Koch Chemie</strong>.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center text-xs font-bold">✓</span>
+                        <span><strong class="text-white">Comodidade absoluta:</strong> Atendimento móvel (no local) para serviços selecionados.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center text-xs font-bold">✓</span>
+                        <span><strong class="text-white">Credenciamento Oficial Soft99:</strong> Garantia de aplicação conforme normas de fábrica.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center text-xs font-bold">✓</span>
+                        <span>3 anos de mercado com foco 100% na satisfação do cliente em Indaiatuba e região.</span>
+                    </li>
+                </ul>
+
+                <div class="pt-4">
+                    <button onclick="requestQuote()" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg shadow-brand-500/15 transition-all hover:translate-y-[-1px]">
+                        Experimentar Padrão Loop's
+                    </button>
+                </div>
+            </div>
+
+            <!-- Brand Grids / Icons Representation -->
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                <div class="bg-zinc-900/60 border border-zinc-850 p-6 rounded-2xl flex flex-col justify-center items-center text-center gap-2">
+                    <span class="text-4xl">🇯🇵</span>
+                    <h4 class="font-display font-extrabold text-white text-lg">Soft99</h4>
+                    <p class="text-xs text-zinc-500">Líder japonesa em vitrificação de altíssimo brilho e repelência.</p>
+                </div>
+                <div class="bg-zinc-900/60 border border-zinc-850 p-6 rounded-2xl flex flex-col justify-center items-center text-center gap-2">
+                    <span class="text-4xl">🇰🇷</span>
+                    <h4 class="font-display font-extrabold text-white text-lg">CarPro</h4>
+                    <p class="text-xs text-zinc-500">Referência em coatings cerâmicos e limpeza técnica de ponta.</p>
+                </div>
+                <div class="bg-zinc-900/60 border border-zinc-850 p-6 rounded-2xl flex flex-col justify-center items-center text-center gap-2">
+                    <span class="text-4xl">🇩🇪</span>
+                    <h4 class="font-display font-extrabold text-white text-lg">Koch Chemie</h4>
+                    <p class="text-xs text-zinc-500">Aprovada por montadoras alemãs para limpeza técnica e polimento.</p>
+                </div>
+                <div class="bg-zinc-900/60 border border-zinc-850 p-6 rounded-2xl flex flex-col justify-center items-center text-center gap-2">
+                    <span class="text-4xl">🏡</span>
+                    <h4 class="font-display font-extrabold text-white text-lg">No Local</h4>
+                    <p class="text-xs text-zinc-500">Levamos nossa estrutura até você para o máximo de conveniência.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== PACOTES ===== -->
+<section id="pacotes" class="py-24 bg-zinc-950/40 relative border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">Mais Economia &amp; Proteção</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Nossos Combos Especiais</h2>
+            <p class="text-zinc-400 mt-4">Tratamentos combinados que protegem o exterior e renovam o interior do veículo com valores promocionais imperdíveis.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Combo 1 -->
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between hover:border-brand-500/30 transition-all">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded-full mb-4">Brilho Absoluto</span>
+                    <h3 class="font-display font-extrabold text-2xl text-white mb-2 leading-tight">Combo Renovação Suprema</h3>
+                    <p class="text-zinc-400 text-sm mb-6">A combinação ideal para quem busca renovar o interior e dar proteção vitrificada de longa duração ao exterior do veículo.</p>
+                    
+                    <ul class="space-y-3 text-sm text-zinc-300 border-t border-zinc-800 pt-6 mb-8">
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Vitrificação Soft99</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Higienização Interna Completa</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Proteção UV em Plásticos/Couro</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="border-t border-zinc-800/60 pt-6 mb-6">
+                        <span class="text-xs text-zinc-500 block mb-1">A partir de</span>
+                        <div class="flex items-baseline gap-1.5 text-zinc-400 text-xs">
+                            <span class="text-white text-3xl font-display font-extrabold text-brand-500">R$ 950,00</span>
+                            (Hatch / Sedan)
+                        </div>
+                        <div class="text-[11px] text-zinc-500 mt-1">SUV / Picape: a partir de R$ 1.100,00</div>
+                    </div>
+                    <button onclick="requestQuote('Combo Renovação Suprema', 'combo')" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white py-3 rounded-xl text-sm font-semibold transition-all">
+                        Contratar Combo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Combo 2 (Featured) -->
+            <div class="bg-zinc-900 border-2 border-brand-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-2xl shadow-brand-500/10">
+                <span class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-brand-500 text-white px-3 py-1 text-xs font-bold rounded-full uppercase tracking-widest">Mais Procurado</span>
+                <div>
+                    <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded-full mb-4">Coração do Carro</span>
+                    <h3 class="font-display font-extrabold text-2xl text-white mb-2 leading-tight">Combo Performance &amp; Estética</h3>
+                    <p class="text-zinc-400 text-sm mb-6">Cuidado estético detalhado na pintura com limpeza ultra-segura e proteção do cofre do motor.</p>
+                    
+                    <ul class="space-y-3 text-sm text-zinc-300 border-t border-zinc-800 pt-6 mb-8">
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Limpeza Detalhada (Lavagem)</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Limpeza Técnica de Motor</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Aplicação de Verniz Protetor</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="border-t border-zinc-800/60 pt-6 mb-6">
+                        <span class="text-xs text-zinc-500 block mb-1">A partir de</span>
+                        <div class="flex items-baseline gap-1.5 text-zinc-400 text-xs">
+                            <span class="text-white text-3xl font-display font-extrabold text-brand-500">R$ 230,00</span>
+                            (Hatch / Sedan)
+                        </div>
+                        <div class="text-[11px] text-zinc-400 mt-1">SUV / Picape: a partir de R$ 260,00</div>
+                    </div>
+                    <button onclick="requestQuote('Combo Performance & Estética', 'combo')" class="w-full bg-brand-500 hover:bg-brand-600 text-white py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-brand-500/20">
+                        Contratar Combo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Combo 3 -->
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between hover:border-brand-500/30 transition-all">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-500 text-xs font-semibold rounded-full mb-4">Saúde &amp; Brilho</span>
+                    <h3 class="font-display font-extrabold text-2xl text-white mb-2 leading-tight">Combo Conforto &amp; Brilho</h3>
+                    <p class="text-zinc-400 text-sm mb-6">Perfeito para quem deseja uma pintura reluzente e um interior totalmente estéril, livre de germes.</p>
+                    
+                    <ul class="space-y-3 text-sm text-zinc-300 border-t border-zinc-800 pt-6 mb-8">
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Limpeza Detalhada Externa</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Higienização Interna Completa</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Perfumação Exclusiva Loop's</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="border-t border-zinc-800/60 pt-6 mb-6">
+                        <span class="text-xs text-zinc-500 block mb-1">A partir de</span>
+                        <div class="flex items-baseline gap-1.5 text-zinc-400 text-xs">
+                            <span class="text-white text-3xl font-display font-extrabold text-brand-500">R$ 490,00</span>
+                            (Hatch / Sedan)
+                        </div>
+                        <div class="text-[11px] text-zinc-500 mt-1">SUV / Picape: a partir de R$ 520,00</div>
+                    </div>
+                    <button onclick="requestQuote('Combo Conforto & Brilho', 'combo')" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white py-3 rounded-xl text-sm font-semibold transition-all">
+                        Contratar Combo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREÇOS ===== -->
+<section id="precos" class="py-24 bg-zinc-900/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">Tabela Loop's</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Transparência em Cada Valor</h2>
+            <p class="text-zinc-400 mt-4">Preços base calculados com transparência absoluta. Selecione o tipo de categoria abaixo para visualizar a tabela detalhada.</p>
+        </div>
+
+        <!-- Toggles de Categoria -->
+        <div class="flex justify-center mb-10">
+            <div class="bg-zinc-900 p-1 rounded-xl border border-zinc-800 flex flex-wrap justify-center gap-1">
+                <button id="btnHatch" onclick="switchCategory('hatch')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all bg-brand-500 text-white">
+                    Hatch &amp; Sedan
+                </button>
+                <button id="btnSuv" onclick="switchCategory('suv')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all text-zinc-400 hover:text-white">
+                    SUV &amp; Picape
+                </button>
+                <button id="btnMoto" onclick="switchCategory('moto')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all text-zinc-400 hover:text-white">
+                    Motos 🏍️
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto bg-zinc-900/60 border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl">
+            <!-- Tabela Hatch / Sedan -->
+            <div id="tableHatch" class="divide-y divide-zinc-800/60">
+                <div class="grid grid-cols-12 p-5 text-sm font-bold text-zinc-400 uppercase tracking-wider bg-zinc-900/80">
+                    <div class="col-span-8">Serviço</div>
+                    <div class="col-span-4 text-right">Valor</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Vitrificação Soft99</span>
+                        <span class="text-xs text-zinc-400">Proteção de verniz com toque aveludado</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 750,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Polimento Técnico</span>
+                        <span class="text-xs text-zinc-400">Eliminação de micro-riscos e hologramas</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 450,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Higienização Interna</span>
+                        <span class="text-xs text-zinc-400">Limpeza profunda e assepsia completa</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 400,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Detalhada</span>
+                        <span class="text-xs text-zinc-400">Lavagem técnica de alta lubrificação</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 120,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza de Motor</span>
+                        <span class="text-xs text-zinc-400">Higienização segura com proteção térmica</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 150,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Pesada</span>
+                        <span class="text-xs text-zinc-400">Caixas de roda e suspensão</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 170,00</div>
+                </div>
+            </div>
+
+            <!-- Tabela SUV / Picape (Hidden on Start) -->
+            <div id="tableSuv" class="hidden divide-y divide-zinc-800/60">
+                <div class="grid grid-cols-12 p-5 text-sm font-bold text-zinc-400 uppercase tracking-wider bg-zinc-900/80">
+                    <div class="col-span-8">Serviço</div>
+                    <div class="col-span-4 text-right">Valor</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Vitrificação Soft99</span>
+                        <span class="text-xs text-zinc-400">Proteção de verniz com toque aveludado</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 900,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Polimento Técnico</span>
+                        <span class="text-xs text-zinc-400">Eliminação de micro-riscos e hologramas</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 600,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Higienização Interna</span>
+                        <span class="text-xs text-zinc-400">Limpeza profunda e assepsia completa</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 400,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Detalhada</span>
+                        <span class="text-xs text-zinc-400">Lavagem técnica de alta lubrificação</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 150,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza de Motor</span>
+                        <span class="text-xs text-zinc-400">Higienização segura com proteção térmica</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 150,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Pesada</span>
+                        <span class="text-xs text-zinc-400">Caixas de roda e suspensão</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 200,00</div>
+                </div>
+            </div>
+
+            <!-- Tabela Motos (Hidden on Start) -->
+            <div id="tableMoto" class="hidden divide-y divide-zinc-800/60">
+                <div class="grid grid-cols-12 p-5 text-sm font-bold text-zinc-400 uppercase tracking-wider bg-zinc-900/80">
+                    <div class="col-span-8">Serviço (Motos)</div>
+                    <div class="col-span-4 text-right">Valor</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Vitrificação Soft99 (Motos)</span>
+                        <span class="text-xs text-zinc-400">Proteção cerâmica ultra-resistente de plásticos e metais contra calor</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 380,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Polimento de Tanque / Metais</span>
+                        <span class="text-xs text-zinc-400">Lustro profundo no tanque de combustível e remoção de riscos</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 250,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Assento Detail (Higienização)</span>
+                        <span class="text-xs text-zinc-400">Limpeza e hidratação hidrofóbica com toque seco para banco</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 60,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Detalhada + Relação</span>
+                        <span class="text-xs text-zinc-400">Lavagem técnica fina com pincéis e desengraxe/lubrificação da corrente</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 80,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Detalhamento Técnico de Escapamento</span>
+                        <span class="text-xs text-zinc-400">Limpeza dielétrica segura e polimento técnico do escapamento de metal</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 120,00</div>
+                </div>
+                <div class="grid grid-cols-12 p-5 items-center hover:bg-zinc-900/20 transition-all">
+                    <div class="col-span-8">
+                        <span class="block text-white font-semibold">Limpeza Pesada (Off-Road / Lama)</span>
+                        <span class="text-xs text-zinc-400">Tratamento para remover barro impregnado em todo o chassi e motor</span>
+                    </div>
+                    <div class="col-span-4 text-right font-display font-bold text-brand-500">A partir de R$ 120,00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-zinc-500 text-xs px-4">
+            <p>📌 Formas de Pagamento: Pix, Dinheiro e Cartão de Crédito.</p>
+            <p>Atendimentos aos Finais de Semana e Feriados (7h às 18h).</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="py-24 bg-zinc-950/40 relative border-t border-zinc-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-brand-500 text-xs font-bold tracking-widest uppercase">FAQ</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Dúvidas Frequentes</h2>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <details class="group bg-zinc-900/60 border border-zinc-850 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-zinc-800">
+                <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                    <h3 class="font-display font-bold text-lg text-white group-open:text-brand-500 transition-colors">
+                        Quanto tempo dura a vitrificação?
+                    </h3>
+                    <span class="transition duration-300 group-open:-rotate-180 text-brand-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </summary>
+                <p class="text-zinc-400 text-sm mt-4 leading-relaxed pl-1 border-l border-brand-500/30">
+                    A durabilidade da vitrificação aplicada pela Loop's Garage varia de acordo com o produto escolhido do catálogo japonês da Soft99, podendo oferecer de 1 a até 3 anos de proteção extrema e alta repelência hidrofóbica, desde que as manutenções sejam feitas conforme as recomendações técnicas.
+                </p>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="group bg-zinc-900/60 border border-zinc-850 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-zinc-800">
+                <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                    <h3 class="font-display font-bold text-lg text-white group-open:text-brand-500 transition-colors">
+                        Vocês possuem credenciamento oficial?
+                    </h3>
+                    <span class="transition duration-300 group-open:-rotate-180 text-brand-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </summary>
+                <p class="text-zinc-400 text-sm mt-4 leading-relaxed pl-1 border-l border-brand-500/30">
+                    Sim! Somos aplicadores e centro técnico credenciado oficial da prestigiada marca japonesa <strong class="text-white">Soft99</strong>. Isso garante que a aplicação das resinas seja realizada seguindo os rigorosos procedimentos exigidos pela fabricante, com ferramentas oficiais e suporte de garantia.
+                </p>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="group bg-zinc-900/60 border border-zinc-850 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-zinc-800">
+                <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                    <h3 class="font-display font-bold text-lg text-white group-open:text-brand-500 transition-colors">
+                        Por que contratar os serviços da Loop's Garage?
+                    </h3>
+                    <span class="transition duration-300 group-open:-rotate-180 text-brand-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </summary>
+                <p class="text-zinc-400 text-sm mt-4 leading-relaxed pl-1 border-l border-brand-500/30">
+                    Estamos há 3 anos no mercado de Indaiatuba e região unindo produtos líderes mundiais (CarPro, Soft99, Koch Chemie) à conveniência da estética automotiva no local e flexibilidade de atendimento nos finais de semana e feriados. Oferecemos um atendimento transparente focado na devolução estética do veículo ao padrão de concessionária.
+                </p>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="group bg-zinc-900/60 border border-zinc-850 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all hover:border-zinc-800">
+                <summary class="flex justify-between items-center cursor-pointer focus:outline-none">
+                    <h3 class="font-display font-bold text-lg text-white group-open:text-brand-500 transition-colors">
+                        O que inclui no detalhamento?
+                    </h3>
+                    <span class="transition duration-300 group-open:-rotate-180 text-brand-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </summary>
+                <p class="text-zinc-400 text-sm mt-4 leading-relaxed pl-1 border-l border-brand-500/30">
+                    O detalhamento automotivo da Loop's Garage inclui tratamentos específicos que geram alta proteção UV para as superfícies (evitando desbotamento por sol), conservação e selagem da pintura contra agressões cotidianas, revitalização completa de plásticos internos e externos para que readquiram a tonalidade original profunda, além de assepsia minuciosa interna. O objetivo é devolver a aparência de carro zero km a cada curva do seu automóvel.
+                </p>
+            </details>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="py-20 bg-gradient-to-r from-zinc-900 to-zinc-950 relative overflow-hidden border-t border-zinc-900">
+    <div class="absolute inset-0 bg-brand-500/5 blur-[120px] pointer-events-none rounded-full w-96 h-96 -top-12 -left-12"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center gap-6">
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">Pronto para proteger e valorizar o seu veículo?</h2>
+        <p class="text-zinc-400 text-base max-w-2xl leading-relaxed">
+            Deixe o seu carro com o padrão de excelência Loop's Garage. Agende ou peça uma avaliação rápida no WhatsApp sem compromisso. Atendimento aos finais de semana e feriados!
+        </p>
+        <button onclick="requestQuote()" class="bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand-500/20 transition-all hover:scale-105 active:scale-100 flex items-center gap-2 text-base">
+            Pedir Orçamento Personalizado
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        </button>
+    </div>
+</section>
+
+<!-- ===== CONTATO E RODAPÉ ===== -->
+<footer class="bg-dark-950 border-t border-zinc-850 pt-16 pb-8" id="contato">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <!-- Logo Col -->
+        <div class="md:col-span-5 flex flex-col gap-4">
+            <a href="#top" class="flex items-center gap-2">
+                <div class="h-10 w-auto max-w-[150px] bg-zinc-900/40 p-2 rounded-lg border border-zinc-800 flex items-center justify-center">
+                    <img src="https://placehold.co/180x50/18181b/ffffff?text=LOOP'S+GARAGE" 
+                         alt="Loop's Garage Logo Footer" 
+                         class="h-full w-auto object-contain">
+                </div>
+            </a>
+            <p class="text-xs text-zinc-400 max-w-sm leading-relaxed">
+                Estética automotiva de alto padrão em Indaiatuba e região. Credenciado Soft99. Brilho, proteção e assepsia profunda usando exclusivamente produtos de nível mundial.
+            </p>
+            <div class="flex items-center gap-4 text-zinc-400 mt-2">
+                <a href="https://instagram.com/loops.garage" target="_blank" rel="noopener" class="hover:text-brand-500 transition-colors text-sm flex items-center gap-1">
+                    <span>📸</span> @loops.garage
+                </a>
+            </div>
+        </div>
+
+        <!-- Info Col -->
+        <div class="md:col-span-4 flex flex-col gap-3">
+            <h4 class="font-display font-bold text-white text-base">Atendimento</h4>
+            <ul class="text-xs text-zinc-400 space-y-2">
+                <li>📍 Atendimento em <strong class="text-white">Indaiatuba e região</strong> (com serviço no local)</li>
+                <li>🕗 Sáb, Dom e Feriados das 07h às 18h</li>
+                <li>📧 contato@loopsgarage.com.br</li>
+                <li>📞 (19) 99999-9999</li>
+            </ul>
+        </div>
+
+        <!-- Fast Links -->
+        <div class="md:col-span-3 flex flex-col gap-3">
+            <h4 class="font-display font-bold text-white text-base">Atalhos</h4>
+            <ul class="text-xs text-zinc-400 space-y-2">
+                <li><a href="#servicos" class="hover:text-white transition-colors">Nossos Serviços</a></li>
+                <li><a href="#moto-detail" class="hover:text-white transition-colors">Especial Moto Detail</a></li>
+                <li><a href="#diferenciais" class="hover:text-white transition-colors">Diferenciais</a></li>
+                <li><a href="#galeria" class="hover:text-white transition-colors">Galeria</a></li>
+                <li><a href="#pacotes" class="hover:text-white transition-colors">Combos Promocionais</a></li>
+                <li><a href="#precos" class="hover:text-white transition-colors">Tabela Completa</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-zinc-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-zinc-500 text-xs">
+        <p>© 2026 Loop's Garage · Indaiatuba e região. Todos os direitos reservados.</p>
+        <p>Desenvolvido com foco em alta performance automotiva.</p>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="javascript:void(0)" onclick="requestQuote()" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="Falar conosco no WhatsApp">
+    <svg viewBox="0 0 32 32" class="w-7 h-7 fill-currentColor"><path d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.4 2 7.8L.4 31.6l8.1-2.1c2.3 1.3 4.9 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.4 16 .4zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9-5.8 12.9-12.9 12.9zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.2-1-1.9-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.7.2-.2.2-.4.4-.6.1-.3 0-.5 0-.7s-.9-2.1-1.2-2.9c-.3-.8-.6-.6-.9-.7h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.7-.5z"></path></svg>
+</a>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+    // Header shadow on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('siteHeader');
+        if (window.scrollY > 20) {
+            header.classList.add('bg-dark-950/95', 'shadow-lg', 'border-zinc-800');
+            header.classList.remove('bg-dark-950/80', 'border-zinc-850');
+        } else {
+            header.classList.remove('bg-dark-950/95', 'shadow-lg', 'border-zinc-800');
+            header.classList.add('bg-dark-950/80', 'border-zinc-850');
+        }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        bar1.classList.toggle('rotate-45');
+        bar1.classList.toggle('translate-y-[8px]');
+        bar2.classList.toggle('opacity-0');
+        bar3.classList.toggle('-rotate-45');
+        bar3.classList.toggle('-translate-y-[10px]');
+    });
+
+    // Close mobile menu on link clicks
+    mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            bar1.classList.remove('rotate-45', 'translate-y-[8px]');
+            bar2.classList.remove('opacity-0');
+            bar3.classList.remove('-rotate-45', '-translate-y-[10px]');
+        });
+    });
+
+    // Toggle categories on pricing table
+    function switchCategory(category) {
+        const btnHatch = document.getElementById('btnHatch');
+        const btnSuv = document.getElementById('btnSuv');
+        const btnMoto = document.getElementById('btnMoto');
+        const tableHatch = document.getElementById('tableHatch');
+        const tableSuv = document.getElementById('tableSuv');
+        const tableMoto = document.getElementById('tableMoto');
+
+        // Reset all buttons
+        [btnHatch, btnSuv, btnMoto].forEach(btn => {
+            btn.classList.remove('bg-brand-500', 'text-white');
+            btn.classList.add('text-zinc-400', 'hover:text-white');
+        });
+
+        // Hide all tables
+        [tableHatch, tableSuv, tableMoto].forEach(table => {
+            table.classList.add('hidden');
+        });
+
+        if (category === 'hatch') {
+            btnHatch.classList.add('bg-brand-500', 'text-white');
+            btnHatch.classList.remove('text-zinc-400', 'hover:text-white');
+            tableHatch.classList.remove('hidden');
+        } else if (category === 'suv') {
+            btnSuv.classList.add('bg-brand-500', 'text-white');
+            btnSuv.classList.remove('text-zinc-400', 'hover:text-white');
+            tableSuv.classList.remove('hidden');
+        } else if (category === 'moto') {
+            btnMoto.classList.add('bg-brand-500', 'text-white');
+            btnMoto.classList.remove('text-zinc-400', 'hover:text-white');
+            tableMoto.classList.remove('hidden');
+        }
+    }
+
+    // Dynamic WhatsApp integration
+    const WHATSAPP_NUMBER = '5519999999999'; // Mocked WhatsApp
+
+    function requestQuote(item = '', type = '') {
+        let baseMsg = "Olá! Gostaria de solicitar um orçamento com a Loop's Garage.";
+        
+        if (item) {
+            if (type === 'moto') {
+                baseMsg = `Olá! Gostaria de solicitar um orçamento para o serviço de *"${item}"* para minha *Moto* na Loop's Garage.`;
+            } else if (type === 'combo') {
+                baseMsg = `Olá! Gostaria de contratar o combo especial *"${item}"* com a Loop's Garage. Pode me passar mais informações?`;
+            } else {
+                baseMsg = `Olá! Gostaria de solicitar um orçamento para o serviço de *"${item}"* para o meu veículo com a Loop's Garage.`;
+            }
+        }
+        
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(baseMsg)}`;
+        window.open(url, '_blank', 'noopener');
+    }
+
+    // ===== CAROUSEL LOGIC =====
+    const track = document.getElementById('carouselTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('carouselDots');
+    
+    let currentIndex = 0;
+    const slides = Array.from(track.children);
+    const totalSlides = slides.length;
+
+    // Create Indicators (dots)
+    slides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `w-2.5 h-2.5 rounded-full transition-all ${idx === 0 ? 'bg-brand-500 w-6' : 'bg-zinc-600 hover:bg-zinc-400'}`;
+        dot.setAttribute('aria-label', `Ir para slide ${idx + 1}`);
+        dot.addEventListener('click', () => {
+            goToSlide(idx);
+            resetAutoSlide();
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = Array.from(dotsContainer.children);
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, idx) => {
+            if (idx === currentIndex) {
+                dot.classList.add('bg-brand-500', 'w-6');
+                dot.classList.remove('bg-zinc-600');
+            } else {
+                dot.classList.remove('bg-brand-500', 'w-6');
+                dot.classList.add('bg-zinc-600');
+            }
+        });
+    }
+
+    function goToSlide(index) {
+        currentIndex = (index + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    nextBtn.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+        resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+        resetAutoSlide();
+    });
+
+    // Touch Support (Swipe) for Mobile
+    let startX = 0;
+    let endX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    }, {passive: true});
+
+    track.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    }, {passive: true});
+
+    track.addEventListener('touchend', () => {
+        const diffX = startX - endX;
+        if (Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                goToSlide(currentIndex + 1); // Swiped Left
+            } else {
+                goToSlide(currentIndex - 1); // Swiped Right
+            }
+            resetAutoSlide();
+        }
+    });
+
+    // Auto sliding interval
+    let autoSlideInterval = setInterval(() => {
+        goToSlide(currentIndex + 1);
+    }, 5000);
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+            goToSlide(currentIndex + 1);
+        }, 5000);
+    }
+</script>
+</body>
+</html>
